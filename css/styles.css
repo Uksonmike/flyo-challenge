@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   Font size: 14px;
+  color: #fff;
+  scroll-behavior: smooth;
+  background:hsl(217, 28%, 15%);
+}
+
+.logo{
+  width: 70px;
+}
+
+ul li {
+  list-style: none;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+/*Navbar*/
+
+#nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background:hsl(217, 28%, 15%);
+    
+}
+
+#nav .nav-btn{
+    display: flex;
+    list-style-type: none;
+    
+}
+.nav-link{
+  padding: 0.3rem;
+  
+}
+
+main{
+  position: relative;
+  padding-bottom: 200px;
+}
+/* Showcase*/
+
+
+#showcase{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 3rem;
+    text-align:center;
+    background-color: hsl(218, 28%, 13%), url("/images/bg-curvy-desktop.svg") bottom no-repeat;
+    background: 100% 278px;
+    color: #fff;
+    
+    
+}
+#showcase img{
+    width: 200px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+#showcase h1{
+    padding-bottom: 0.3rem;
+}
+#showcase p{
+    padding: 1rem 0;
+    font-size: 15px;
+}
+#showcase a{
+  margin-top: 1rem;
+  padding: 0.3rem 3rem;
+  background-color: cyan;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  border:none;
+}
+/* Features*/
+
+#feature{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+    margin: 2rem 0;
+    padding: 0 2.2rem;
+    text-align: center;
+    
+}
+
+
+#feature h3{
+  margin: 1rem 0 2rem 0;
+}
+
+/* feature b*/
+
+#features{
+  display: flex;
+  align-items:center;
+  padding: 0 133px;
+  margin: 2rem 0;
+  max-width: auto;
+}
+#features .img-box img{
+  height: 468px;
+  width: auto;
+  margin-right: 45px;
+}
+
+.text-box :not(:last-child){
+  margin-bottom: 25px;
+}
+
+.disc-link{
+  color: cyan;
+  border-bottom: 1px solid cyan;
+}
+.disc-link img{
+  vertical-align: middle;
+  margin-left: 3px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  padding: 2.5rem;
+}
+.testimonials{
+  background: hsl(219, 30%, 18%);
+  padding: 45px 40px;
+  border-radius: 5px;
+  position: relative;
+}
+.testimonials:first-child::before{
+  content: url(/images/bg-quotes.png);
+  position: absolute;
+  top: -80px;
+  left: -15px;
+  z-index: -1;
+}
+.testimonials p{
+  margin-bottom: 25px;
+}
+.profile{
+  display: flex;
+  
+}
+.profile img{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.div h3{
+font-size: 18px;
+
+}
+.div p{
+  font-size: 8px;
+}
+
+
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(217, 28%, 15%);
+  padding: 50px 74px 40px 74px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -155px;
+}
+.sign-up h2{
+margin-bottom: 36px;
+text-align: center;
+}
+
+.sign-up p{
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+form{
+  display:flex;
+  align-content: center;
+}
+
+input[type = "email"]{
+  width: 482px;
+  height: 50px;
+  padding: 20px 47px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+input{
+  color: #fff ;
+  margin: 0;
+
+}
+
+footer{
+background: hsl(216, 53%, 9%);
+padding: 200px 80px 80px 100px;
+display: grid;
+grid-template-columns: 4fr 3fre 1fr 1fr 2fr;
+grid-template-rows: auto;
+column-gap: 70px;
+grid-template-areas: 
+"logo , , , ,";
+}
